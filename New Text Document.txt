@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAIC-Bekasi | Official Showroom</title>
+
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f0f0f;color:#fff}
+header{background:#000;padding:25px;text-align:center}
+nav{background:#151515;display:flex;justify-content:center;gap:20px;padding:10px}
+nav a{color:#fff;text-decoration:none;font-size:14px}
+nav a:hover{color:#4caf50}
+section{padding:40px 20px;max-width:1100px;margin:auto}
+.hero{text-align:center}
+
+.slider{height:280px;overflow:hidden;border-radius:12px}
+.slides{display:flex;width:300%;animation:slide 12s infinite}
+.slides img{width:100%;height:280px;object-fit:cover}
+@keyframes slide{
+0%{margin-left:0}
+33%{margin-left:-100%}
+66%{margin-left:-200%}
+100%{margin-left:0}
+}
+
+.btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#4caf50;color:#000;
+text-decoration:none;font-weight:bold;border-radius:6px}
+
+.cars{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.card{background:#1c1c1c;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-content{padding:20px}
+.card-content ul{padding-left:18px;color:#ccc;font-size:14px}
+
+.form-box{background:#1c1c1c;border-radius:12px;padding:25px}
+.form-box input,.form-box select{
+width:100%;padding:12px;margin:8px 0;border-radius:6px;border:none
+}
+
+.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;
+padding:14px 18px;border-radius:50px;font-weight:bold;text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.4);z-index:999}
+
+footer{background:#000;text-align:center;padding:20px;color:#777;font-size:13px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>BAIC-Bekasi</h1>
+<p>Official Showroom • Adventure • Performance</p>
+<p style="font-size:13px;color:#aaa">
+Pusat Otomotif Sentra Harapan (POSH)<br>
+Jl. Harapan Indah No.3A Blok D, Kota Bekasi, Jawa Barat 17132
+</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#produk">Produk</a>
+<a href="#booking">Booking</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
+<section id="home" class="hero">
+<div class="slider">
+<div class="slides">
+<img src="https://baic.co.id/storage/article/images/01JZJ5ZR68YWAKRY7EVT4FQ9SZ.png">
+<img src="https://baic.co.id/storage/article/images/01J4GRH4W10BBGFV6PX65Q3CNY.webp">
+<img src="https://baic.co.id/storage/article/images/01J5JTW0Y2S6EED6Y7QKAZK1FZ.webp">
+</div>
+</div>
+
+<h2>Showroom Resmi BAIC Bekasi</h2>
+<p>Solusi SUV tangguh, stylish, dan modern untuk segala kebutuhan.</p>
+<a class="btn" href="#booking">Booking Test Drive</a>
+</section>
+
+<section id="produk">
+<h2>Unit Tersedia</h2>
+
+<div class="cars">
+
+<div class="card">
+<img src="https://baic.co.id/storage/article/images/01JZJ5ZR68YWAKRY7EVT4FQ9SZ.png">
+<div class="card-content">
+<h3>BAIC BJ40</h3>
+<ul>
+<li>2.0L Turbo</li>
+<li>4x4 + Front & Rear Differential Lock</li>
+<li>Off-road hardcore</li>
+</ul>
+<a class="btn" href="#booking">Minat BJ40</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://baic.co.id/storage/article/images/01J4GRH4W10BBGFV6PX65Q3CNY.webp">
+<div class="card-content">
+<h3>BAIC BJ30</h3>
+<ul>
+<li>Mesin Turbo efisien</li>
+<li>Interior luas & nyaman</li>
+<li>Cocok keluarga & daily</li>
+</ul>
+<a class="btn" href="#booking">Minat BJ30</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://baic.co.id/storage/article/images/01J5JTW0Y2S6EED6Y7QKAZK1FZ.webp">
+<div class="card-content">
+<h3>BAIC X55 II</h3>
+<ul>
+<li>1.5L Turbo</li>
+<li>Transmisi DCT</li>
+<li>Desain sporty modern</li>
+</ul>
+<a class="btn" href="#booking">Minat X55 II</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="booking">
+<h2>Booking Test Drive / Konsultasi</h2>
+
+<div class="form-box">
+<input id="nama" placeholder="Nama Lengkap">
+<input id="kota" placeholder="Domisili">
+<select id="mobil">
+<option>BAIC BJ40</option>
+<option>BAIC BJ30</option>
+<option>BAIC X55 II</option>
+</select>
+<input id="jadwal" placeholder="Rencana Waktu">
+<button class="btn" onclick="kirimWA()">Kirim via WhatsApp</button>
+</div>
+</section>
+
+<section id="kontak">
+<h2>Kontak Showroom</h2>
+<p>📍 POSH Bekasi – Harapan Indah</p>
+<p>📲 WhatsApp: <strong>0813-8103-8770</strong></p>
+</section>
+
+<footer>
+© 2026 BAIC-Bekasi | Official Showroom
+</footer>
+
+<a class="wa-float" href="https://wa.me/6281381038770" target="_blank">💬 WhatsApp</a>
+
+<script>
+function kirimWA(){
+var nama=document.getElementById("nama").value;
+var kota=document.getElementById("kota").value;
+var mobil=document.getElementById("mobil").value;
+var jadwal=document.getElementById("jadwal").value;
+
+var text=`Halo BAIC-Bekasi,%0ASaya ${nama}%0ATertarik ${mobil}%0ADomisili: ${kota}%0ARencana: ${jadwal}`;
+window.open("https://wa.me/6281381038770?text="+text,"_blank");
+}
+</script>
+
+</body>
+</html>
