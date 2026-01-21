@@ -2,108 +2,71 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BAIC Bekasi | Dealer Resmi</title>
+<title>Dealer Resmi BAIC Bekasi | Harga & Test Drive</title>
+<meta name="description" content="Dealer Resmi BAIC Bekasi. Harga BJ40, BJ30, X55 II. Test Drive & Simulasi Kredit. Hubungi Sales Sekarang.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#ffffff;
-  color:#222222;
-  text-align:center;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
+h1,h2,h3,h4{margin:0}
 
+/* HEADER */
 header{
-  padding:70px 20px;
-  background:#ffffff;
-  border-bottom:1px solid #eaeaea;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 40px;border-bottom:1px solid #eee
+}
+nav a{margin-left:20px;text-decoration:none;color:#111;font-size:14px}
+.cta{background:#c4161c;color:#fff;padding:10px 16px;border-radius:4px}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('slide1.jpg') center/cover;
+  color:#fff;padding:120px 40px
+}
+.hero h1{font-size:46px;max-width:600px}
+.hero p{max-width:520px;font-size:18px;margin:20px 0}
+.hero a{display:inline-block;margin-top:20px}
+
+/* SECTION */
+.section{padding:70px 40px;border-top:1px solid #eee}
+.section h3{font-size:32px;margin-bottom:40px}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{border:1px solid #eee;border-radius:6px;overflow:hidden}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:20px}
+.price{font-weight:bold;margin-top:8px}
+
+/* TRUST */
+.trust{background:#f9f9f9}
+.trust .box{padding:25px;border-radius:6px;background:#fff;border:1px solid #eee}
+
+/* FORM */
+form{max-width:520px;display:grid;gap:14px}
+input,select{padding:12px;border:1px solid #ccc;border-radius:4px}
+button{padding:14px;border:none;background:#25d366;color:#fff;font-size:16px;border-radius:4px}
+
+/* SIMULASI */
+.simulasi{background:#111;color:#fff;border-radius:8px;padding:30px}
+.simulasi span{font-weight:bold}
+
+/* FOOTER */
+footer{text-align:center;padding:30px;background:#f8f8f8;font-size:14px}
+
+/* FLOAT WA */
+.wa{
+  position:fixed;right:20px;bottom:20px;
+  background:#25d366;color:#fff;
+  padding:14px 18px;border-radius:50px;
+  text-decoration:none;font-weight:bold
 }
 
-header h1{
-  font-size:42px;
-  margin-bottom:10px;
-}
-
-header p{
-  font-size:18px;
-  opacity:.85;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 28px;
-  background:#25D366;
-  color:#000;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:bold;
-}
-
-.section{
-  padding:60px 20px;
-  max-width:1200px;
-  margin:auto;
-}
-
-.section h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-size:32px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:#1b1b1b;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-
-.card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-}
-
-.card-content{
-  padding:20px;
-}
-
-.card h3{
-  margin:0 0 10px;
-}
-
-.price{
-  color:#25D366;
-  font-weight:bold;
-  margin-bottom:15px;
-}
-
-.card a{
-  text-decoration:none;
-  color:#25D366;
-  font-weight:bold;
-}
-
-.map iframe{
-  width:100%;
-  height:350px;
-  border-radius:16px;
-  border:0;
-}
-
-footer{
-  text-align:center;
-  padding:30px;
-  background:#000;
-  opacity:.7;
+@media(max-width:768px){
+  header{flex-direction:column;gap:15px}
+  .hero{padding:80px 20px}
+  .hero h1{font-size:34px}
 }
 </style>
 </head>
@@ -111,60 +74,110 @@ footer{
 <body>
 
 <header>
-  <h1>BAIC Bekasi</h1>
-  <p>Dealer Resmi • Test Drive • Konsultasi Kredit</p>
-  <a class="btn" href="https://wa.me/628xxxxxxxxxx" target="_blank">
-    Chat WhatsApp Sekarang
-  </a>
+  <strong>BAIC Bekasi</strong>
+  <nav>
+    <a href="#harga">Harga</a>
+    <a href="#kredit">Kredit</a>
+    <a href="#testdrive" class="cta">Test Drive</a>
+  </nav>
 </header>
 
-<section class="section">
-  <h2>Unit Unggulan BAIC</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="BAIC BJ40">
-      <div class="card-content">
-        <h3>BAIC BJ40</h3>
-        <div class="price">Mulai 710 Jutaan</div>
-        <a href="https://wa.me/628xxxxxxxxxx" target="_blank">Info & Test Drive →</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1605559424843-2b69b1d0f7fd" alt="BAIC BJ30">
-      <div class="card-content">
-        <h3>BAIC BJ30</h3>
-        <div class="price">Mulai 529 Jutaan</div>
-        <a href="https://wa.me/628xxxxxxxxxx" target="_blank">Info & Test Drive →</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1b" alt="BAIC X55 II">
-      <div class="card-content">
-        <h3>BAIC X55 II</h3>
-        <div class="price">Mulai 390 Jutaan</div>
-        <a href="https://wa.me/628xxxxxxxxxx" target="_blank">Info & Test Drive →</a>
-      </div>
-    </div>
-
-  </div>
+<!-- HERO -->
+<section class="hero">
+  <h1>Dealer Resmi BAIC Bekasi</h1>
+  <p>BJ40 • BJ30 • X55 II  
+  Harga resmi, unit ready, proses cepat & transparan.</p>
+  <a class="cta" href="https://wa.me/6281381038770">Hubungi Sales</a>
 </section>
 
-<section class="section map">
-  <h2>Lokasi Showroom</h2>
-  <iframe 
-    src="https://www.google.com/maps?q=BAIC%20Bekasi&output=embed"
-    loading="lazy">
-  </iframe>
+<!-- HARGA -->
+<section class="section" id="harga">
+<h3>Daftar Harga OTR Bekasi</h3>
+<div class="grid">
+  <div class="card">
+    <img src="bj40.jpg">
+    <div class="card-body">
+      <h4>BJ40 Plus</h4>
+      <p>2.0L Turbo | 4x4</p>
+      <div class="price">Rp 710.000.000</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="bj30.jpg">
+    <div class="card-body">
+      <h4>BJ30</h4>
+      <p>Urban SUV</p>
+      <div class="price">Rp 529.000.000</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="x55.jpg">
+    <div class="card-body">
+      <h4>X55 II</h4>
+      <p>Modern Compact SUV</p>
+      <div class="price">Rp 390.000.000</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SIMULASI KREDIT -->
+<section class="section trust" id="kredit">
+<h3>Simulasi Kredit</h3>
+<div class="simulasi">
+  Harga: <span id="hargaMobil">710000000</span><br><br>
+  DP (%): <input id="dp" type="number" value="20"><br>
+  Tenor (bulan): <input id="tenor" type="number" value="60"><br><br>
+  Estimasi Angsuran / bulan:<br>
+  <h2 id="hasil">Rp 0</h2>
+</div>
+</section>
+
+<!-- TEST DRIVE -->
+<section class="section" id="testdrive">
+<h3>Booking Test Drive & Kredit</h3>
+<form onsubmit="kirimWA();return false;">
+  <input id="nama" placeholder="Nama Anda" required>
+  <input id="hp" placeholder="No WhatsApp" required>
+  <select id="unit">
+    <option>BJ40 Plus</option>
+    <option>BJ30</option>
+    <option>X55 II</option>
+  </select>
+  <button>Kirim ke WhatsApp</button>
+</form>
 </section>
 
 <footer>
-  © 2026 BAIC Bekasi • Dealer Resmi
+Dealer Resmi BAIC Bekasi • POSH Harapan Indah<br>
+© 2026 BAIC Bekasi
 </footer>
+
+<a class="wa" href="https://wa.me/6281381038770">💬 WhatsApp</a>
+
+<script>
+function hitung(){
+let harga=710000000;
+let dp=document.getElementById('dp').value;
+let tenor=document.getElementById('tenor').value;
+let kredit=harga-(harga*(dp/100));
+let angsuran=Math.round(kredit/tenor);
+document.getElementById('hasil').innerText=
+  'Rp '+angsuran.toLocaleString('id-ID');
+}
+document.getElementById('dp').oninput=hitung;
+document.getElementById('tenor').oninput=hitung;
+hitung();
+
+function kirimWA(){
+let n=nama.value;
+let h=hp.value;
+let u=unit.value;
+let t=hasil.innerText;
+let url=`https://wa.me/6281381038770?text=Halo%20BAIC%20Bekasi,%0ASaya%20${n}%0AMinat%20${u}%0AEstimasi%20angsuran%20${t}%0ANo:%20${h}`;
+window.open(url);
+}
+</script>
 
 </body>
 </html>
-
