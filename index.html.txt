@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAIC Bekasi | Dealer Resmi</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f0f0f;
+  color:#ffffff;
+  text-align:center;
+}
+header{
+  padding:70px 20px;
+  background:#000000;
+}
+header h1{
+  margin:0;
+  font-size:42px;
+}
+header p{
+  opacity:0.8;
+  margin:8px 0;
+}
+section{
+  padding:50px 20px;
+}
+.section-title{
+  font-size:28px;
+  margin-bottom:30px;
+}
+.card{
+  background:#1c1c1c;
+  max-width:480px;
+  margin:20px auto;
+  padding:30px;
+  border-radius:18px;
+}
+.card h3{
+  margin-top:0;
+  font-size:22px;
+}
+.card p{
+  opacity:0.85;
+}
+.btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:14px 26px;
+  background:#25D366;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:12px;
+}
+footer{
+  padding:30px 20px;
+  background:#000;
+  opacity:0.7;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>BAIC Bekasi</h1>
+  <p>Dealer Resmi BAIC Indonesia</p>
+  <p>Pusat Otomotif Sentra Harapan (POSH)</p>
+</header>
+
+<section>
+  <div class="section-title">Line Up Produk</div>
+
+  <div class="card">
+    <h3>BAIC BJ40</h3>
+    <p>SUV 4x4 off-road sejati dengan tampilan gagah dan tangguh.</p>
+    <a class="btn" href="https://wa.me/6281381038770">Minat BAIC BJ40</a>
+  </div>
+
+  <div class="card">
+    <h3>BAIC BJ30</h3>
+    <p>SUV modern, nyaman, dan cocok untuk keluarga maupun harian.</p>
+    <a class="btn" href="https://wa.me/6281381038770">Minat BAIC BJ30</a>
+  </div>
+
+  <div class="card">
+    <h3>BAIC X55 II</h3>
+    <p>Desain sporty dengan mesin turbo dan transmisi DCT.</p>
+    <a class="btn" href="https://wa.me/6281381038770">Minat BAIC X55 II</a>
+  </div>
+
+</section>
+
+<section>
+  <div class="section-title">Lokasi Showroom</div>
+  <p>Pusat Otomotif Sentra Harapan (POSH)</p>
+  <p>Jl. Harapan Indah No.3A Blok D, Bekasi</p>
+</section>
+
+<footer>
+  © 2026 BAIC Bekasi • WhatsApp 0813-8103-8770
+</footer>
+
+</body>
+</html>
